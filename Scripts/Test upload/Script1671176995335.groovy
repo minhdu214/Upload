@@ -21,5 +21,5 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.w3schools.com/howto/howto_html_file_upload_button.asp')
 
-WebUI.uploadFile(findTestObject('Page_How To Create a File Upload Button/input_Next_myFile'), 'C:\\Users\\duc.phan\\Katalon Studio\\upload file\\10.png')
+WebUI.uploadFile(findTestObject('Page_How To Create a File Upload Button/input_Next_myFile'), '10.png')
 
