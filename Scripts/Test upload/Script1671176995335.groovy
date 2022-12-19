@@ -16,10 +16,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.w3schools.com/howto/howto_html_file_upload_button.asp')
 
-WebUI.uploadFile(findTestObject('Page_How To Create a File Upload Button/input_Next_myFile'), '10.png')
+//WebUI.uploadFile(findTestObject('Page_How To Create a File Upload Button/input_Next_myFile'), '10.png')
 
+
+def filePath = RunConfiguration.getProjectDir() + '/10.png'
+WebUI.uploadFileWithDragAndDrop(filePath)
