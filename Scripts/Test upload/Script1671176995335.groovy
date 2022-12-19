@@ -28,4 +28,4 @@ WebUI.navigateToUrl('https://www.w3schools.com/howto/howto_html_file_upload_butt
 
 
 def filePath = RunConfiguration.getProjectDir() + '/10.png'
-WebUI.uploadFileWithDragAndDrop(filePath)
+WebUI.uploadFile(findTestObject('Object Repository/Page_How To Create a File Upload Button/input_Next_myFile'), filePath)
