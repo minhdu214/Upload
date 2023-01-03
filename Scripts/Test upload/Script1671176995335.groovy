@@ -27,7 +27,8 @@ WebUI.navigateToUrl('https://www.w3schools.com/howto/howto_html_file_upload_butt
 //WebUI.uploadFile(findTestObject('Page_How To Create a File Upload Button/input_Next_myFile'), '10.png')
 
 
-def filePath = RunConfiguration.getProjectDir() + '/11.png'
+def filePath = RunConfiguration.getProjectDir() + '/10.png'
 
-new File(filePath).getCanonicalPath()
-WebUI.uploadFile(findTestObject('Object Repository/Page_How To Create a File Upload Button/input_Next_myFile'), filePath)
+def newFilePath = new File(filePath).getCanonicalPath()
+
+WebUI.uploadFile(findTestObject('Object Repository/Page_How To Create a File Upload Button/input_Next_myFile'), newFilePath)
