@@ -38,4 +38,9 @@ def parentFolder = new File(newFilePath).parentFile.getCanonicalPath()
 def folder = ConsoleCommandBuilder.create("dir \"${parentFolder}\"").redirectError().execSync()
 println String.join("\r\n", folder)
 
+
+
+def folder1 = ConsoleCommandBuilder.create("dir \"C:\\Users\\Administrator\\.katalon\"").redirectError().execSync()
+println String.join("\r\n", folder1)
+
 WebUI.uploadFile(findTestObject('Object Repository/Page_How To Create a File Upload Button/input_Next_myFile'), newFilePath)
