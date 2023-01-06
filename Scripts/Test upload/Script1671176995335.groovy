@@ -10,7 +10,8 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.ConsoleCommandBuilder
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -30,5 +31,11 @@ WebUI.navigateToUrl('https://www.w3schools.com/howto/howto_html_file_upload_butt
 def filePath = RunConfiguration.getProjectDir() + '/10.png'
 
 def newFilePath = new File(filePath).getCanonicalPath()
+
+println newFilePath
+
+def parentFolder = new File(newFilePath).parentFile.getCanonicalPath()
+def folder = ConsoleCommandBuilder.create("dir \"${parentFolder}\"").redirectError().execSync()
+println String.join("\r\n", folder)
 
 WebUI.uploadFile(findTestObject('Object Repository/Page_How To Create a File Upload Button/input_Next_myFile'), newFilePath)
