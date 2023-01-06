@@ -21,6 +21,8 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.nio.file.Files
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.w3schools.com/howto/howto_html_file_upload_button.asp')
@@ -34,11 +36,15 @@ def newFilePath = new File(filePath).getCanonicalPath()
 
 println newFilePath
 
+def isExisted = new File(newFilePath).exists()
+println "> isExisted: " + isExisted
+
+def fileContent = Files.readAllBytes(new File(newFilePath).toPath())
+println "> File size: " + fileContent.length;
+
 def parentFolder = new File(newFilePath).parentFile.getCanonicalPath()
 def folder = ConsoleCommandBuilder.create("dir \"${parentFolder}\"").redirectError().execSync()
 println String.join("\r\n", folder)
-
-
 
 def folder1 = ConsoleCommandBuilder.create("dir \"C:\\Users\\Administrator\\.katalon\"").redirectError().execSync()
 println String.join("\r\n", folder1)
