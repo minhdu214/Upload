@@ -17,11 +17,36 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('google.com')
+WebUI.openBrowser('')
 
-WebUI.getUrl()
+WebUI.navigateToUrl('https://www.forrester.com/bold')
 
-WebUI.navigateToUrl('google.com')
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject(null))
+WebUI.setViewPortSize(1233, 587)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Page_Forrester Helps Organizations Grow Thr_dedbf3/form_Search'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Forrester Helps Organizations Grow Thr_dedbf3/input_Search_q'), 'prediction 2023: Cybersecurity, Risk, and Privatecy')
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_Forrester Helps Organizations Grow Thr_dedbf3/input_Search_q'), Keys.chord(
+        Keys.ENTER))
+
+WebUI.click(findTestObject('Page_Search  Forrester/span_Accept cookies'))
+
+not_run: WebUI.setText(findTestObject('Page_Search  Forrester/div_Log in_input__container input--large'), 'prediction 2023: Cybersecurity, Risk, and Privatecy')
+
+not_run: WebUI.click(findTestObject('Object Repository/Page_Search  Forrester/mark_prediction 2023 Cybersecurity, Risk, a_e569ef'))
+
+WebUI.click(findTestObject('Object Repository/Page_Search  Forrester/span_Reports'))
+
+not_run: WebUI.scrollToElement(findTestObject('Page_Search  Forrester/a_Predictions 2023'), 0)
+
+WebUI.click(findTestObject('Page_Search  Forrester/a_Predictions 2023'))
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
 

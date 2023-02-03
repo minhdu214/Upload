@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>mark_prediction 2023 Cybersecurity, Risk, a_e569ef</name>
+   <tag></tag>
+   <elementGuidId>632b6d31-038f-4d86-9f2e-51c8e1cc9122</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>mark.text__highlight</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='menuitem-checkbox-label-48']/span/mark</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>mark</value>
+      <webElementGuid>edee2ea7-89ce-4f78-a822-737eee66ec6b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>index</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>69274ff8-6d67-471e-9a4b-e5bfd64c2c7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>prediction 2023: Cybersecurity, Risk, and Privatecy</value>
+      <webElementGuid>8bca03f9-482d-426e-80d5-ebf68b4a2afb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text__highlight</value>
+      <webElementGuid>e4484f4a-df9a-434e-a1a3-69df53825651</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;menuitem-checkbox-label-48&quot;)/span[1]/mark[@class=&quot;text__highlight&quot;]</value>
+      <webElementGuid>b097a920-1dbc-4919-b48f-9a932d4f1598</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='menuitem-checkbox-label-48']/span/mark</value>
+      <webElementGuid>9f50842c-f6a3-4bc1-a7cf-ca9e7d3d1a9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Log in'])[1]/following::mark[1]</value>
+      <webElementGuid>5e802514-02d8-479e-a63b-bb11ba735a09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Become A Client'])[1]/following::mark[1]</value>
+      <webElementGuid>96ae6640-53ff-4dc0-99a4-e1c30ef66c48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/preceding::mark[1]</value>
+      <webElementGuid>4771da5c-9f69-4f4d-9754-af5a12297f4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='All'])[1]/preceding::mark[1]</value>
+      <webElementGuid>673163fa-0e15-4dd8-b3b8-c53171f7e320</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='prediction 2023: Cybersecurity, Risk, and Privatecy']/parent::*</value>
+      <webElementGuid>75e299a0-534b-4f98-a679-9333009eab99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//mark</value>
+      <webElementGuid>bfc73141-b35d-413d-a7be-7f8c83b6a87d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//mark[(text() = 'prediction 2023: Cybersecurity, Risk, and Privatecy' or . = 'prediction 2023: Cybersecurity, Risk, and Privatecy')]</value>
+      <webElementGuid>a226d5c0-8da0-48f0-8b76-ee619c70f065</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
