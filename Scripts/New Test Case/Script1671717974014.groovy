@@ -34,6 +34,8 @@ WebUI.setText(findTestObject('Object Repository/Page_Forrester Helps Organizatio
 WebUI.sendKeys(findTestObject('Object Repository/Page_Forrester Helps Organizations Grow Thr_dedbf3/input_Search_q'), Keys.chord(
         Keys.ENTER))
 
+WebUI.acceptAlert()
+
 WebUI.click(findTestObject('Page_Search  Forrester/span_Accept cookies'))
 
 not_run: WebUI.setText(findTestObject('Page_Search  Forrester/div_Log in_input__container input--large'), 'prediction 2023: Cybersecurity, Risk, and Privatecy')
