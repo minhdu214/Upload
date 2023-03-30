@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "16C02E0710E08E79C6F63904E9F19FB9",
+  "keywordClasses": [
+    {
+      "name": "com.example.openIEModeEdgeBrowser",
+      "keywordMethods": [
+        {
+          "name": "openBrowser",
+          "parameters": [
+            {
+              "name": "url",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * Open browser\r\n\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

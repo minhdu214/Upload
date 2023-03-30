@@ -17,5 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.acceptAlert()
+WebUI.openBrowser('google.com')
+
+WebUI.click(findTestObject('Page_Search  Forrester/mark_prediction 2023 Cybersecurity, Risk, a_e569ef'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.closeBrowser()
 
