@@ -32,23 +32,23 @@ WebUI.navigateToUrl('https://www.w3schools.com/howto/howto_html_file_upload_butt
 
 def filePath = RunConfiguration.getProjectDir() + '/10.png'
 
-def newFilePath = new File(filePath).getCanonicalPath()
+//def newFilePath = new File(filePath).getCanonicalPath()
 
-println newFilePath
+//println newFilePath
 
-def isExisted = new File(newFilePath).exists()
-println "> isExisted: " + isExisted
+//def isExisted = new File(newFilePath).exists()
+//println "> isExisted: " + isExisted
 
-def fileContent = Files.readAllBytes(new File(newFilePath).toPath())
-println "> File size: " + fileContent.length;
+//def fileContent = Files.readAllBytes(new File(newFilePath).toPath())
+//println "> File size: " + fileContent.length;
 
-def parentFolder = new File(newFilePath).parentFile.getCanonicalPath()
-def folder = ConsoleCommandBuilder.create("dir \"${parentFolder}\"").redirectError().execSync()
-println String.join("\r\n", folder)
+//def parentFolder = new File(newFilePath).parentFile.getCanonicalPath()
+//def folder = ConsoleCommandBuilder.create("dir \"${parentFolder}\"").redirectError().execSync()
+//println String.join("\r\n", folder)
 
-def folder1 = ConsoleCommandBuilder.create("dir \"C:\\Users\\Administrator\\.katalon\"").redirectError().execSync()
-println String.join("\r\n", folder1)
+//def folder1 = ConsoleCommandBuilder.create("dir \"C:\\Users\\Administrator\\.katalon\"").redirectError().execSync()
+//println String.join("\r\n", folder1)
 
-newFilePath = "C:\\Users\\Administrator\\.katalon\\application.properties"
+//newFilePath = "C:\\Users\\Administrator\\.katalon\\application.properties"
 
-WebUI.uploadFile(findTestObject('Object Repository/Page_Become a client - Forrester/input_Next_myFile'), newFilePath)
+WebUI.uploadFile(findTestObject('Object Repository/Page_Become a client - Forrester/input_Next_myFile'), filePath)
